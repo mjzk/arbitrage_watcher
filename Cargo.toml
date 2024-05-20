@@ -1,0 +1,24 @@
+cargo-features = ["edition2024"]
+
+[package]
+name = "chainx"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+alloy = { git = "https://github.com/alloy-rs/alloy", rev = "e22d9be", features = [
+    "contract",
+    "network",
+    "node-bindings",
+    "providers",
+    "provider-http",
+    "provider-ipc",
+    "provider-ws",
+    "rpc-client",
+    "rpc-client-ipc",
+    "rpc-client-ws",
+    "rpc-types-eth",
+    "rpc-types-trace",
+] }
+tokio = { version = "1", features = ["full"] }
+thiserror = "1.0"
