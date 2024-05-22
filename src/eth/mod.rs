@@ -1,1 +1,1 @@
-mod gas;
+pub mod prices;
