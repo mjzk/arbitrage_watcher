@@ -22,3 +22,4 @@ alloy = { git = "https://github.com/alloy-rs/alloy", rev = "e22d9be", features =
 ] }
 tokio = { version = "1", features = ["full"] }
 thiserror = "1.0"
+csv = "1.3"
